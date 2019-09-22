@@ -1,0 +1,139 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: url("bg.jpg") right center/cover no-repeat fixed;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding-top: 100px;
+  background-color: white;
+}
+
+#container {
+	height: 143%;
+  display: none;
+}
+
+.first-view {
+	height: 70%;
+	min-height: 70%;
+}
+
+.hidden-view {
+	height: 30%;
+}
+
+section {
+  width: 35%;
+  /* background: rgba(255, 255, 255, 0.75); */
+  background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.8), rgba(252, 247, 215, 0.9));
+  border: 1px solid rgba(243, 95, 81, 0.1);
+  border-radius: 5px;
+  padding: 30px 70px 30px 70px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+#jacket {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.detail {
+  margin: 0 auto;
+  text-align: center;
+}
+
+dl {
+  text-align: center;
+}
+
+dd {
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  border-bottom: 1px solid rgba(17, 165, 156, 0.3);
+  padding-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.detail-info {
+  text-align: left;
+  margin: 0 0 0 50px;
+}
+
+.credit-member {
+  margin-bottom: 20px;
+}
+
+.liner-notes-detail {
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hidden-view {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+  }
+
+  .detail-info {
+    margin: 0 0 0 100px;
+  }
+}
+
+@media screen and (max-device-width: 767px) {
+  body {
+		background: #fff;
+  }
+
+	body:before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: url("bg_sp.jpg") no-repeat 98% center;
+		background-size: 300% auto;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+  section {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+  }
+
+  .hidden-view {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .detail-info {
+    margin: 0 0 0 10px;
+  }
+}

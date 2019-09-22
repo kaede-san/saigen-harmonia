@@ -1,0 +1,175 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	color: #4b4b4d;
+	background-image: radial-gradient(#F7F6FB, #FFFFFF);
+	margin: 0 50px;
+	text-align: center;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+#container {
+	height: 143%;
+}
+
+.first-view {
+	height: 60%;
+	min-height: 60%;
+}
+
+.hidden-view {
+	height: 40%;
+}
+
+section {
+	margin: 100px 0;
+}
+
+img {
+	margin: 0;
+}
+
+.Headline {
+	padding-top: 50px;
+	border-top: solid 1px #e2e1e6;
+}
+
+#circle-cut-pc {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 800px;
+	display: block;
+}
+
+#circle-cut-sp {
+	display: none;
+}
+
+.messages {
+	padding-top: 120px;
+}
+
+#message1, #message2 {
+	width: 60%;
+	max-width: 400px;
+	display: block;
+}
+
+p, h2, h3, dt, dl {
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+.information-detail {
+	margin: 15px 0;
+	display: block;
+}
+
+dt {
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+dl {
+	margin-bottom: 10px;
+}
+
+a:link {
+	color: #5a32fa;
+}
+
+a:visited {
+	color: #7d7d80;
+}
+
+.headline-img {
+	width: 50%;
+	max-width: 400px;
+	margin: 0;
+}
+
+.message {
+	padding: 5px 0;
+}
+
+.information-area {
+	/* width: 65%; */
+	margin: 10px 30px;
+	padding: 10px;
+	border: ridge 5px #7d7d80;
+}
+
+.soundcloud-messages {
+	margin: 0 auto;
+	padding: 20px 0 80px 0;
+}
+
+.members {
+	margin: 0 100px;
+}
+
+.member-box {
+	display: flex;
+	margin: 50px auto;
+}
+
+.member-detail {
+	flex-direction: column;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.a-sha {
+	width: 150px;
+	height: 150px;
+	border: 3px ridge #e2e1e6;
+}
+
+footer {
+	margin: 50px 0;
+}
+
+@media (max-width: 767px) {
+	body {
+		margin: 0 20px;
+	}
+	#circle-cut-pc {
+		display: none;
+	}
+	#circle-cut-sp {
+		display: block;
+		width: 30%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.messages {
+		padding-top: 50px;
+	}
+	#message1, #message2 {
+		width: 90%;
+	}
+	.headline-img {
+		width: 100%;
+		max-width: 350px;
+	}
+	.soundcloud {
+		width: 100%;
+	}
+	.members {
+		margin: 0;
+	}
+	.member-box {
+		display: block;
+		margin-bottom: 30px;
+	}
+	.a-sha {
+		margin-bottom: 20px;
+	}
+}
